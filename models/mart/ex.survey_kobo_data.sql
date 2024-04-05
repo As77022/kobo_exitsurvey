@@ -52,9 +52,7 @@ SELECT
     "first_name"	,
     "middle_name"	,
     "last_name"	,
-     case 
-     when "fullname" 
-     "fullname"	,
+    "fullname"	,
     "date_of_birth":: DATE	,
     "age"	,
     "gender"	,
