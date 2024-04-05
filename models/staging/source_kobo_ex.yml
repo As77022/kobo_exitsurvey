@@ -1,0 +1,49 @@
+version: 2
+
+sources:
+  - name: kobo_exitsurvey
+    database: LAHIDATA
+    schema: a_stg_exitsurvey_kobo
+    tables:
+      - name: ap_10th_exitsurvey_kobo
+        identifier: AP_10th_Combine
+        description: andhra pradesh exit survey kobo data
+      - name: ap_12th_exitsurvey_kobo
+        identifier: AP_12th_Combine
+        description: andhra pradesh exit survey kobo data
+      - name: cg_10th_exitsurvey_kobo
+        identifier: CG_10TH_Combine
+        description:  chandighar exit survey kobo data
+      - name: cg_12th_exitsurvey_kobo
+        identifier: CG_12th_Combine
+        description:  chandighar exit survey kobo data
+      - name: hp_10th_exitsurvey_kobo
+        identifier: HP_10th_Combine
+        description:  himachal pradesh exit survey kobo data
+      - name: hp_12th_exitsurvey_kobo
+        identifier: HP_12th_Combine
+        description:  himachal pradesh exit survey kobo data
+      - name: ka_10th_exitsurvey_kobo
+        identifier: KA_10th_Combine
+        description:  karnataka exit survey kobo data
+      - name: ka_12th_exitsurvey_kobo
+        identifier: KA_12th_Combine
+        description:  karnataka exit survey kobo data
+      - name: ng_10th_exitsurvey_kobo
+        identifier: NG_10th_Combine
+        description:  nagaland exit survey kobo data    
+      - name: ng_12th_exitsurvey_kobo
+        identifier: NG_12TH_Combine
+        description:  nagaland exit survey kobo data
+      - name: pb_10th_exitsurvey_kobo
+        identifier: Pb_10th_Combine
+        description:  punjab exit survey kobo data
+      - name: pb_12th_exitsurvey_kobo
+        identifier: Pb_12th_Combine
+        description:  punjab exit survey kobo data
+      - name: tl_10th_exitsurvey_kobo
+        identifier: TL_10th_Combine
+        description:  telangana exit survey kobo data
+      - name: tl_12th_exitsurvey_kobo
+        identifier: TL_12th_Combine
+        description:  telangana exit survey kobo data
