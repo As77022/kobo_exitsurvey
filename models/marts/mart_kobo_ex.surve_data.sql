@@ -1,33 +1,33 @@
 
 
 WITH cte AS (
-    (SELECT DISTINCT * FROM {{ref("ap_10th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_ap_10th_ex.survey_23-24")}})
     UNION ALL
-    (SELECT DISTINCT * FROM {{ref("ap_12th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_ap_12th_ex.survey_23-24")}})
     UNION ALL
-    (SELECT DISTINCT * FROM {{ref("cg_10th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_cg_10th_ex.survey_23-24")}})
     UNION ALL
-    (SELECT DISTINCT * FROM {{ref("cg_12th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_cg_12th_ex.survey_23-24")}})
     UNION ALL
-    (SELECT DISTINCT * FROM {{ref("hp_10th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_hp_10th_ex.survey_23-24")}})
     UNION ALL
-    (SELECT DISTINCT * FROM {{ref("hp_12th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_hp_12th_ex.survey_23-24")}})
     UNION ALL
-    (SELECT DISTINCT * FROM {{ref("ka_10th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_ka_10th_ex.survey_23-24")}})
     UNION ALL
-    (SELECT DISTINCT * FROM {{ref("ka_12th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_ka_12th_ex.survey_23-24")}})
     UNION ALL
-    (SELECT DISTINCT * FROM {{ref("ng_10th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_ng_10th_ex.survey_23-24")}})
     UNION ALL
-    (SELECT DISTINCT * FROM {{ref("ng_12th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_ng_12th_ex.survey_23-24")}})
     UNION ALL
-    (SELECT DISTINCT * FROM {{ref("pb_10th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_pb_10th_ex.survey_23-24")}})
     UNION ALL
-    (SELECT DISTINCT * FROM {{ref("pb_12th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_pb_12th_ex.survey_23-24")}})
     UNION ALL
-    (SELECT DISTINCT * FROM {{ref("tl_10th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_tl_10th_ex.survey_23-24")}})
     UNION ALL
-    (SELECT DISTINCT * FROM {{ref("tl_12th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_tl_12th_ex.survey_23-24")}})
 )
 SELECT
     cast("start_date" as TIMESTAMP),
