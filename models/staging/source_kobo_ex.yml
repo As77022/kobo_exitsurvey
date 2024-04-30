@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: kobo_exitsurvey
     database: LAHIDATA
-    schema: a_stg_exitsurvey_kobo
+    schema: stg_kobo_exitsurvey
     tables:
       - name: ap_10th_exitsurvey_kobo
         identifier: AP_10th_Combine
@@ -47,3 +47,6 @@ sources:
       - name: tl_12th_exitsurvey_kobo
         identifier: TL_12th_Combine
         description:  telangana exit survey kobo data
+      - name: ld_10-12th_exitsurvey_kobo
+        identifier: Ladakh_Combine
+        description:  ladakh exit survey kobo data

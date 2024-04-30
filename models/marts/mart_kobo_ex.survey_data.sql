@@ -1,4 +1,5 @@
-
+{{ config(
+  materialized='table')}}
 
 WITH cte AS (
     (SELECT DISTINCT * FROM {{ref("int_ap_10th_ex.survey_23-24")}})
@@ -28,6 +29,8 @@ WITH cte AS (
     (SELECT DISTINCT * FROM {{ref("int_tl_10th_ex.survey_23-24")}})
     UNION ALL
     (SELECT DISTINCT * FROM {{ref("int_tl_12th_ex.survey_23-24")}})
+    UNION ALL
+    (SELECT DISTINCT * FROM {{ref("int_ld_10-12th_ex.survey_23-24")}})
 )
 SELECT
     cast("start_date" as TIMESTAMP),
@@ -105,5 +108,45 @@ SELECT
     "are_you_intrested_in_doing_apprentice_naps_"	,
     "parent_index"	,
     "submission_id"	,
-    "submission_uuid"
+    "submission_uuid",
+    CAST(NULL AS VARCHAR(15)) AS "exit_student_id",
+    CAST(NULL AS VARCHAR(15)) AS "academic_year_id",
+    CAST(NULL AS VARCHAR(30)) AS "vc_name",
+    CAST(NULL AS VARCHAR(20)) AS "division",
+    CAST(NULL AS VARCHAR(20)) AS "category",
+    CAST(NULL AS VARCHAR(20)) AS "religion",
+    CAST(NULL AS VARCHAR(30)) AS "stream_name",
+    CAST(NULL AS VARCHAR(20)) AS "city_of_residence",
+    CAST(NULL AS VARCHAR(20)) AS "district_of_residence",
+    CAST(NULL AS VARCHAR(20)) AS "block_of_residence",
+    CAST(NULL AS VARCHAR(15)) AS "pincode",
+    CAST(NULL AS VARCHAR(50)) AS "studentaddress",
+    CAST(NULL AS VARCHAR(20)) AS "will_cont_voc_edu",
+    CAST(NULL AS VARCHAR(20)) AS "will_cont_same_sector",
+    CAST(NULL AS VARCHAR(20)) AS "sector_for_training",
+    CAST(NULL AS VARCHAR(20)) AS "other_sector",
+    CAST(NULL AS VARCHAR(20)) AS "sectors_of_employment",
+    CAST(NULL AS VARCHAR(20)) AS "is_vs_completed",
+    CAST(NULL AS VARCHAR(20)) AS "is_fulltime_willingness",
+    CAST(NULL AS VARCHAR(20)) AS "hve_registered_on_employment_portal",
+    CAST(NULL AS VARCHAR(20)) AS "employment_portalname",
+    CAST(NULL AS VARCHAR(20)) AS "intrested_in_job_or_self_employment_post12th",
+    CAST(NULL AS VARCHAR(20)) AS "wanttoknowaboutopportunities",
+    CAST(NULL AS VARCHAR(20)) AS "want_to_know_abtpgms_for_jobsn_cont_edu",
+    CAST(NULL AS VARCHAR(20)) AS "collected_email_id",
+    CAST(NULL AS VARCHAR(20)) AS "survey_completed_by_student_or_parent",
+    CAST(NULL AS VARCHAR(20)) AS "remark",
+    CAST(NULL AS VARCHAR(20)) AS "exit_survey_status",
+    CAST(NULL AS VARCHAR(20)) AS "is_relevant_to_voc_course",
+    CAST(NULL AS VARCHAR(20)) AS "will_be_fulltime",
+    CAST(NULL AS VARCHAR(20)) AS "other_reasons",
+    CAST(NULL AS VARCHAR(20)) AS "does_field_study_hve_voc_sub",
+    CAST(NULL AS VARCHAR(20)) AS "topics_of_interest",
+    CAST(NULL AS VARCHAR(20)) AS "any_preferred_loc_for_employment",
+    CAST(NULL AS VARCHAR(20)) AS "can_send_the_updates",
+    CAST(NULL AS VARCHAR(20)) AS "willing_to_cont_skill_training",
+    CAST(NULL AS VARCHAR(20)) AS "course_for_training",
+    CAST(NULL AS VARCHAR(20)) AS "course_name_if_other",
+    CAST(NULL AS VARCHAR(20)) AS "skill_training_type",
+    CAST(NULL AS VARCHAR(20)) AS "other_sectors_if_any"
 FROM cte

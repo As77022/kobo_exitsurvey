@@ -6,24 +6,23 @@
 
        {%- if target.schema != "dev_prod" -%}
             {% if node.fqn[1:-1]|length == 0 %}
-                 {{target.schema}}_{{ default_schema }}    
+                 {{ target.schema }}_{{ default_schema }}
             {% else %}
                 {% set prefix = node.fqn[1:-1]|join('_') %}
-                 {{target.schema}}_{{ prefix | trim }}
+                 {{ target.schema }}_{{ prefix | trim }}
             {% endif %}
-
 
        {% else %} 
             {% if node.fqn[1:-1]|length == 0 %}
-                {{ default_schema }}    
+                {{ default_schema }}  
             {% else %}
                 {% set prefix = node.fqn[1:-1]|join('_') %}
-                {{ prefix | trim }}
+                {{ prefix | trim }}_{{ node.name }}
             {% endif %}
          {% endif %}
     {%- else -%}
 
-        {{ default_schema }}_{{ custom_schema_name | trim }}
+       {{ custom_schema_name | trim }}_{{ default_schema }}
 
     {%- endif -%}
 
