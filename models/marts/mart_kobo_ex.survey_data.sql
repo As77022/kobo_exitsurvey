@@ -119,7 +119,6 @@ SELECT
     CAST(NULL AS VARCHAR(20)) AS "city_of_residence",
     CAST(NULL AS VARCHAR(20)) AS "district_of_residence",
     CAST(NULL AS VARCHAR(20)) AS "block_of_residence",
-    CAST(NULL AS VARCHAR(15)) AS "pincode",
     CAST(NULL AS VARCHAR(50)) AS "studentaddress",
     CAST(NULL AS VARCHAR(20)) AS "will_cont_voc_edu",
     CAST(NULL AS VARCHAR(20)) AS "will_cont_same_sector",
