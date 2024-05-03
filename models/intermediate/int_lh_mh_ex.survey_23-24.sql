@@ -177,20 +177,17 @@ SELECT
     CAST(NULL AS VARCHAR(20)) AS "reason_not_conti_high_educ_marriage",
     CAST(NULL AS VARCHAR(20)) AS "reason_not_conti_high_educ_other",
     CAST(NULL AS VARCHAR(20)) AS "stream_of_higher_educ",
-    CAST(NULL AS VARCHAR(20)) AS "stream_of_higher_educ",
-    
-
-other_educ_stream_please_specify
-field_studies_contain_voc_subjects
-reasons_for_not_conti_ve
-other_reason_not_conti_ve_specify
-willing_to_conti_part_time_job_while_doing_educ
-kind_of_employment_are_you_interested_in
-interested_in_career_counseling
-overall_ve_experience_in_school
-are_you_intrested_in_doing_apprentice_naps_
-parent_index
-submission_id
-submission_uuid
+    CAST(NULL AS VARCHAR(20)) AS "other_educ_stream_please_specify",
+    CAST(NULL AS VARCHAR(20)) AS "field_studies_contain_voc_subjects",
+    CAST(NULL AS VARCHAR(20)) AS "reasons_for_not_conti_ve",
+    CAST(NULL AS VARCHAR(20)) AS "other_reason_not_conti_ve_specify",
+    CAST(NULL AS VARCHAR(20)) AS "willing_to_conti_part_time_job_while_doing_educ",
+    CAST(NULL AS VARCHAR(20)) AS "kind_of_employment_are_you_interested_in",
+    CAST(NULL AS VARCHAR(20)) AS "interested_in_career_counseling",
+    CAST(NULL AS VARCHAR(20)) AS "overall_ve_experience_in_school",
+    CAST(NULL AS VARCHAR(20)) AS "are_you_intrested_in_doing_apprentice_naps_",
+    CAST(NULL AS VARCHAR(20)) AS "parent_index",
+    CAST(NULL AS VARCHAR(20)) AS "submission_id",
+    CAST(NULL AS VARCHAR(20)) AS "submission_uuid"
 FROM new_table as nt
 WHERE Class IN ('Class 10','Class 12')
