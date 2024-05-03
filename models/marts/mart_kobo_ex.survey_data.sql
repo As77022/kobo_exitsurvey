@@ -147,5 +147,16 @@ SELECT
     CAST(NULL AS VARCHAR(20)) AS "course_for_training",
     CAST(NULL AS VARCHAR(20)) AS "course_name_if_other",
     CAST(NULL AS VARCHAR(20)) AS "skill_training_type",
-    CAST(NULL AS VARCHAR(20)) AS "other_sectors_if_any"
+    CAST(NULL AS VARCHAR(20)) AS "other_sectors_if_any",
+    CAST(NULL AS VARCHAR(20)) AS "parent_mobile_no",
+    CAST(NULL AS VARCHAR(20)) AS "internship_completed_sector",
+    CAST(NULL AS VARCHAR(20)) AS "details_of_employment",
+    CAST(NULL AS VARCHAR(20)) AS "studentwano",
+    CAST(NULL AS VARCHAR(20)) AS "sector_for_skill_training",
+    CAST(NULL AS VARCHAR(20)) AS "others_if_any",
+    CAST(NULL AS VARCHAR(20)) AS "willing_to_go_for_tech_high_edu",
+    CAST(NULL AS VARCHAR(20)) AS "different_program_opportunities",
+    CAST(NULL AS VARCHAR(20)) AS "is_assessment_required",
+    CAST(NULL AS VARCHAR(20)) AS "assessment_conducted",
+    CAST(NULL AS VARCHAR(20)) AS "wanttoknowabtskillsunivbygvt"
 FROM cte

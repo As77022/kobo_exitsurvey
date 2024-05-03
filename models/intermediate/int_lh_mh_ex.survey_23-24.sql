@@ -153,7 +153,44 @@ SELECT
 	"nt".DifferentProgramOpportunities AS DifferentProgramOpportunities,
 	"nt".IsAssessmentRequired AS IsAssessmentRequired,
 	"nt".AssessmentConducted AS AssessmentConducted,
-	"nt".SubmissionDate AS SubmissionDate
+	"nt".SubmissionDate AS SubmissionDate,
+    CAST(NULL AS TIMESTAMP) AS "start_date",
+    CAST(NULL AS TIMESTAMP) AS "end_date",
+    CAST(NULL AS date) AS "today",
+    CAST(NULL AS VARCHAR(20)) AS "select_sector",
+    CAST(NULL AS VARCHAR(20)) AS "id",
+    CAST(NULL AS VARCHAR(20)) AS "uuid",
+    CAST(NULL AS VARCHAR(20)) AS "index",
+    CAST(NULL AS VARCHAR(20)) AS "student_unique_id_new",
+    CAST(NULL AS VARCHAR(20)) AS "completed_ojt_internship_in_11_12",
+    CAST(NULL AS VARCHAR(20)) AS "firm_organisation_name",
+    CAST(NULL AS VARCHAR(20)) AS "firm_contact_number",
+    CAST(NULL AS VARCHAR(20)) AS "firm_city_location",
+    CAST(NULL AS VARCHAR(20)) AS "details_ojt_internship_employer",
+    CAST(NULL AS VARCHAR(20)) AS "reason_not_conti_high_educ",
+    CAST(NULL AS VARCHAR(20)) AS "reason_not_conti_high_educ_financial",
+    CAST(NULL AS VARCHAR(20)) AS "reason_not_conti_high_educ_need_a_job",
+    CAST(NULL AS VARCHAR(20)) AS "reason_not_conti_high_educ_family_not_allow",
+    CAST(NULL AS VARCHAR(20)) AS "reason_not_conti_high_educ_not_interested",
+    CAST(NULL AS VARCHAR(20)) AS "reason_not_conti_high_educ_failed_in_current",
+    CAST(NULL AS VARCHAR(20)) AS "reason_not_conti_high_educ_school_till_10th_only",
+    CAST(NULL AS VARCHAR(20)) AS "reason_not_conti_high_educ_marriage",
+    CAST(NULL AS VARCHAR(20)) AS "reason_not_conti_high_educ_other",
+    CAST(NULL AS VARCHAR(20)) AS "stream_of_higher_educ",
+    CAST(NULL AS VARCHAR(20)) AS "stream_of_higher_educ",
+    
+
+other_educ_stream_please_specify
+field_studies_contain_voc_subjects
+reasons_for_not_conti_ve
+other_reason_not_conti_ve_specify
+willing_to_conti_part_time_job_while_doing_educ
+kind_of_employment_are_you_interested_in
+interested_in_career_counseling
+overall_ve_experience_in_school
+are_you_intrested_in_doing_apprentice_naps_
+parent_index
+submission_id
+submission_uuid
 FROM new_table as nt
 WHERE Class IN ('Class 10','Class 12')
-limit 10
