@@ -88,7 +88,7 @@ SELECT
 	"nt".MotherName AS MotherName,
 	"nt".Category AS Category,
 	"nt".Religion AS Religion,
-	"nt".StreamName AS StreamName,
+	"nt".StreamName AS stream_of_education, --modified column name as per kobo
 	"nt".StudentMobileNo AS StudentMobileNo,
 	"nt".StudentWhatsAppNo AS StudentWhatsAppNo,
 	"nt".ParentMobileNo AS ParentMobileNo,
@@ -100,9 +100,9 @@ SELECT
 	"nt".InternshipCompletedSector AS InternshipCompletedSector,
 	"nt".WillContHigherStudies AS WillContHigherStudies,
 	"nt".IsFullTime AS IsFullTime,
-	"nt".CourseToPursue AS CourseToPursue,      
+	"nt".CourseToPursue AS which_course_will_you_pursue,   --modified column name as per kobo   
 	"nt".OtherCourse AS OtherCourse,
-	"nt".StreamOfEducation AS StreamOfEducation,
+	"nt".StreamOfEducation AS stream_of_higher_educ, --modified column name as per kobo
 	"nt".OtherStreamStudying AS OtherStreamStudying,
 	"nt".WillContVocEdu AS WillContVocEdu,
 	"nt".WillContVocational11 AS WillContVocational11,
@@ -176,7 +176,6 @@ SELECT
     CAST(NULL AS VARCHAR(20)) AS "reason_not_conti_high_educ_school_till_10th_only",
     CAST(NULL AS VARCHAR(20)) AS "reason_not_conti_high_educ_marriage",
     CAST(NULL AS VARCHAR(20)) AS "reason_not_conti_high_educ_other",
-    CAST(NULL AS VARCHAR(20)) AS "stream_of_higher_educ",
     CAST(NULL AS VARCHAR(20)) AS "other_educ_stream_please_specify",
     CAST(NULL AS VARCHAR(20)) AS "field_studies_contain_voc_subjects",
     CAST(NULL AS VARCHAR(20)) AS "reasons_for_not_conti_ve",
@@ -190,4 +189,4 @@ SELECT
     CAST(NULL AS VARCHAR(20)) AS "submission_id",
     CAST(NULL AS VARCHAR(20)) AS "submission_uuid"
 FROM new_table as nt
-WHERE Class IN ('Class 10','Class 12')
+WHERE Class IN ('Class 10','Class 12') AND ExitSurveyStatus = 'Submitted' 

@@ -1,0 +1,61 @@
+version: 2
+
+sources:
+  - name: LH_JH_exitsurvey
+    database: LAHIDATA
+    schema: stg_lh_jh
+    tables:
+      - name: StudentClassMapping
+        identifier: StudentClassMapping
+        description: LH_JH_exit_survey_data
+      - name: StudentClasses
+        identifier: StudentClasses
+        description: LH_JH_exit_survey_data
+      - name: VTSchoolSectors
+        identifier: VTSchoolSectors
+        description:  LH_JH_exit_survey_data
+      - name: Sectors
+        identifier: Sectors
+        description:  LH_JH_exit_survey_data
+      - name: JobRoles
+        identifier: JobRoles
+        description:  LH_JH_exit_survey_data
+      - name: Schools
+        identifier: Schools
+        description:  LH_JH_exit_survey_data
+      - name: DataValues
+        identifier: DataValues
+        description:  LH_JH_exit_survey_data
+      - name: SchoolClasses
+        identifier: SchoolClasses
+        description:  LH_JH_exit_survey_data
+      - name: VCTrainersMap
+        identifier: VCTrainersMap
+        description:  LH_JH_exit_survey_data  
+      - name: VocationalTrainers
+        identifier: VocationalTrainers
+        description:  LH_JH_exit_survey_data 
+      - name: VocationalCoordinators
+        identifier: VocationalCoordinators
+        description:  LH_JH_exit_survey_data 
+      - name: VocationalTrainingProviders
+        identifier: VocationalTrainingProviders
+        description:  LH_JH_exit_survey_data  
+      - name: States
+        identifier: States
+        description:  LH_JH_exit_survey_data  
+      - name: AcademicYears
+        identifier: AcademicYears
+        description:  LH_JH_exit_survey_data 
+      - name: Divisions
+        identifier: Divisions
+        description:  LH_JH_exit_survey_data
+      - name: Districts
+        identifier: Districts
+        description:  LH_JH_exit_survey_data
+      - name: StudentClassDetails
+        identifier: StudentClassDetails
+        description:  LH_JH_exit_survey_data
+      - name: ExitSurveyDetails
+        identifier: ExitSurveyDetails
+        description:  LH_JH_exit_survey_data

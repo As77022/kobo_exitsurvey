@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: LH_DL_new_exitsurvey
+    database: LAHIDATA
+    schema: stg_lh_dl_new
+    tables:
+      - name: exit_survey_delhi_23-24
+        identifier: exit_survey_delhi_23-24
+        description: LH_DL_new_exit_survey_data
