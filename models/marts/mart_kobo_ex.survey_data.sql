@@ -2,13 +2,13 @@
   materialized='table')}}
 
 WITH cte AS (
-    (SELECT DISTINCT * FROM {{ref("int_ap_10th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_ap_10th_ex.survey_23-24")}}) --checked
     UNION ALL
     (SELECT DISTINCT * FROM {{ref("int_ap_12th_ex.survey_23-24")}})
     UNION ALL
     (SELECT DISTINCT * FROM {{ref("int_cg_10th_ex.survey_23-24")}})
     UNION ALL
-    (SELECT DISTINCT * FROM {{ref("int_cg_12th_ex.survey_23-24")}})
+    (SELECT DISTINCT * FROM {{ref("int_cg_12th_ex.survey_23-24")}}) 
     UNION ALL
     (SELECT DISTINCT * FROM {{ref("int_hp_10th_ex.survey_23-24")}})
     UNION ALL
@@ -29,7 +29,7 @@ WITH cte AS (
     (SELECT DISTINCT * FROM {{ref("int_tl_10th_ex.survey_23-24")}})
     UNION ALL
     (SELECT DISTINCT * FROM {{ref("int_tl_12th_ex.survey_23-24")}})
-    UNION ALL
+    UNION ALL 
     (SELECT DISTINCT * FROM {{ref("int_ld_10-12th_ex.survey_23-24")}})
 )
 SELECT

@@ -18,7 +18,7 @@ WITH cte AS
     "job_role"	AS	"job_role"	,
     "id"	AS	"id"	,
     "uuid"	AS	"uuid"	,
-	CAST(submission_time AS TIMESTAMP) AS	"submission_date",
+	CAST(submission_time AS TIMESTAMP) AS	"submission_time",
     "index"	AS	"index"	,
     "first_name"	AS	"first_name"	,
     "middle_name"	AS	"middle_name"	,
